@@ -10,3 +10,39 @@
 	    font-weight: 900;
 	}
 }
+.fourth-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__item {
+	    width: 45%;
+	    padding: 20px;
+	    display: flex;
+	    justify-content: space-between;
+	    flex-wrap: nowrap;
+	    margin-bottom: 40px;
+	}
+	&__pic {
+		display: inline-block;
+		vertical-align: middle;
+	    width: 120px;
+	    height: 120px;
+	    	img {
+	    		max-width: none;
+	    	}
+	}
+}
+.content__item {
+    span {
+    	display: inline-block;
+    	vertical-align: middle;
+		margin-bottom: 10px;
+		font-size: 18px;
+	    line-height: 22px;
+	    font-weight: 500;
+	}
+	p {
+		font-size: 16px;
+		font-weight: 300;
+	}
+}

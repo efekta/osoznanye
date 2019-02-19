@@ -1,0 +1,17 @@
+.third-section {
+	background: url('../img/fon_2-min.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	padding: 70px 0;
+	.container {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.third-content {
+	width: 50%;
+
+		p {
+		margin: 30px 0;
+	}
+}
+

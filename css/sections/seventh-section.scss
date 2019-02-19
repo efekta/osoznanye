@@ -1,0 +1,28 @@
+.seventh-section {
+	padding: 60px 0;
+	.title-inner {
+		margin-bottom: 40px;
+	}
+}
+.fancy-wrap {
+	// display: flex;
+// 	justify-content: space-between;
+	// flex-wrap: wrap;
+}
+.fancy-item {
+// 	width: 20%;
+	display: inline-block;
+	// position: relative;
+	// img {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
+}
+body.compensate-for-scrollbar {
+	overflow: visible;
+}

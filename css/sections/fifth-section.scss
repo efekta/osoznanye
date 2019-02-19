@@ -1,0 +1,31 @@
+.fifth-section {
+	background: url('../img/fon-min.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	min-height: 575px;
+	padding: 60px 0;
+
+	.title-wrap h2 {
+		font-size: 62px;
+	    line-height: 74px;
+	    font-family: roboto, sans-serif;
+    	font-weight: 900;
+		text-shadow: 37px 37px 14px rgba(0, 0, 0, 0.2);
+	}
+	.title-wrap p {
+		font-size: 28px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	.title-wrap span {
+		font-size: 52px;
+	    font-weight: 300;
+	    text-transform: uppercase;
+	    text-shadow: 37px 37px 14px rgba(0, 0, 0, 0.2);
+	}
+	.container {
+		height: 100%;
+		display: flex;
+	    align-items: center;
+
+	}
+}

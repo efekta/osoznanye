@@ -7,9 +7,11 @@
 .content {
 	height: 100%;
     text-align: left;
+    // display: flex;
+    // align-items: center;
 }
 .title-wrap {
-	width: 44%;
+	width: 45%;
 	text-transform: uppercase;
 	.title {
 		font-size: 42px;

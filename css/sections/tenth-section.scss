@@ -56,4 +56,45 @@
     	width: 60%;
     }
 }
+.advantage {
+	background: #ED5C66;
+	color: #fff;
+	padding: 40px 0;
 
+	.advantage-title {
+		font-size: 36px;
+	    text-align: left;
+	    // line-height: 43px;
+	    // font-family: roboto, sans-serif;
+	    font-weight: 900;
+	    margin-bottom: 20px;
+	}
+	p {
+		font-size: 24px;
+	    text-align: left;
+	    line-height: 29px;
+	    font-weight: 900;
+	    margin-bottom: 20px;
+	}
+}
+.advantage-content {
+	width: 70%;
+}
+.advantage-list {
+	padding-left: 40px;
+}
+.advantage-list li {
+	font-size: 18px;
+    // line-height: 22px;
+    // font-family: roboto, sans-serif;
+    font-weight: 300;
+}
+
+.sub-title-inner {
+	width: 60%;
+	margin: 0 auto;
+	text-transform: none;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 30px 0;
+}

@@ -30,19 +30,21 @@
 .arrow__next {
     left: 3%;
 }
-.programs-list {
+.programs-list-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+    margin-bottom: 40px;
+}
+.programs-list {
 	list-style-type: none;
     font-size: 18px;
     line-height: 40px;
     font-weight: 300;
-    margin-bottom: 40px;
+    width: 45%;
 }
 .programs-item {
 	position: relative;
-	width: 45%;
 	padding-left: 40px;
 	// margin-bottom: 20px;
 }

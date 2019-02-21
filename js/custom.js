@@ -58,6 +58,18 @@
 	  	// ]
 	});
 
+// mask input phone
+
+  // $(".phone").mask("+7(999) 999-9999");
+
+	/*========================
+  	fancy
+  	=========================*/
+	$('.fancy-wrap a').fancybox({ 
+	  animationEffect : 'fade'
+	}).attr('data-fancybox', 'group1');
+
+
 
 });
 

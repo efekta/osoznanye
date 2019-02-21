@@ -1,9 +1,14 @@
 // laout
+@import "../libs/bootstrap/scss/bootstrap-reboot";
+@import "../libs/bootstrap/scss/modal";
+@import "../libs/slick/slick.scss";
+@import "../libs/slick/slick-theme.scss";
+@import "../libs/fancybox/jquery.fancybox.scss";
+
 @import "settings/fonts.scss";
 @import "settings/normalize.scss";
-// @import "settings/jquery.fancybox.scss";
-@import "settings/slick.scss";
-@import "settings/slick-theme.scss";
+
+
 @import "settings/setting.scss";
 
 @import "sections/header.scss";

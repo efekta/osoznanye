@@ -70,6 +70,10 @@
 	}).attr('data-fancybox', 'group1');
 
 
+  	setTimeout(function() {
+  		animationEffect : 'fade'
+  		$('.modal').modal('show');}, 3000);
+
 
 });
 

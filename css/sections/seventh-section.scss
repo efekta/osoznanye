@@ -2,13 +2,15 @@
 	padding: 60px 0;
 }
 .fancy-wrap {
-	// display: flex;
-// 	justify-content: space-between;
-	// flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    text-align: center;	
 }
 .fancy-item {
-// 	width: 20%;
+	width: 19%;
 	display: inline-block;
+	margin: 0 2px;
 	// position: relative;
 	// img {
 	// 	position: absolute;

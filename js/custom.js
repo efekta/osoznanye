@@ -42,8 +42,8 @@
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
-	        arrow: true,
-	        dots: false
+	        arrow: false,
+	        dots: true
 	      }
 	    },
 	    {
@@ -51,8 +51,8 @@
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
-	        arrow: true,
-	        dots: false
+	        arrow: false,
+	        dots: true
 	      }
 	    }
 	  	]

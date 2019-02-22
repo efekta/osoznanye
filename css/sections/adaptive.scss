@@ -9,7 +9,7 @@
         width: 70%;
     }
     .title-wrap-inner .title-inner {
-        font-size: 28px;
+        font-size: 22px;
         margin-bottom: 30px;
     }
     .btn {
@@ -103,6 +103,20 @@
     .content-item {
         width: 49%;
     }
+    .carousel {
+        padding: 30px 0;
+    }
+    .ninth-section {
+        .title-wrap-inner .title-inner {
+            margin: 0;
+        }
+    }
+    .arrow__prev {
+        right: 0;
+    }
+    .arrow__next {
+        left: 0;
+    }
 }
 
 
@@ -165,6 +179,7 @@
     //     text-align: left;
     // }
     .arrow {
+        // display: none;  
         width: 60px;
         height: 60px;
     }
@@ -210,4 +225,7 @@
     //     left: 0;
     //     transform: translate(0,0);
     // }
+    .video {
+        height: 300px;
+    }
 }

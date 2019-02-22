@@ -13,16 +13,9 @@
 .arrow {
 	position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
-    // font-size: 100px;
-    // color: #fff;
-    // text-shadow: 0px 9px 24px rgba(0, 0, 0, 0.5);
-    // line-height: 0.3;
-    // text-align: left;
 }
 .arrow__prev {
     right: 3%;
@@ -46,7 +39,6 @@
 .programs-item {
 	position: relative;
 	padding-left: 40px;
-	// margin-bottom: 20px;
 }
 .programs-item::before {
 	content: '';
@@ -56,7 +48,6 @@
 	position: absolute;
 	top: 4px;
 	left: 0;
-	// transform: translateY(-50%);
 }
 
 .programs p {
@@ -64,11 +55,4 @@
     font-size: 24px;
     text-align: center;
     font-weight: 300;
-}
-
-@media screen and (max-width: 1024px) and (min-width: 320px) { 
-	// .arrow {
-	// 	display: none;
-	// }
-
 }

@@ -8,12 +8,16 @@
     	flex-direction: column;
     	align-items: center;
     }
+    .title-wrap-inner {
+    	margin-bottom: 70px;
+    }
 }
 .step-list {
 	list-style-type: none;
 }
 .step-item  {
 	position: relative;
+	min-height: 360px;
 	.step-title {
 		font-size: 24px;
 	    font-weight: 500;
@@ -27,14 +31,19 @@
 }
 
 .step-a {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	// position: absolute;
- //    top: 0;
- //    left: 0;
- //    width: 100%;
- //    height: 100%;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* right: 0; */
+    transform: translate(-50%, -50%);
 	span.pink {
 		// display: inline-block;
 	    background-color: transparent;

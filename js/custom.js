@@ -26,36 +26,36 @@
 		  autoplaySpeed: 2000,
 		  slidesToScroll: 1,
 		  slidesToShow: 1,
-		  adaptiveHeight: true
-		  // responsive: [
-	   //  {
-	   //    breakpoint: 1133,
-	   //    settings: {
-	   //      slidesToShow: 1,
-	   //      slidesToScroll: 1,
-	   //      arrow: false,
-	   //      dots: true
-	   //    }
-	   //  },
-	   //  {
-	   //    breakpoint: 600,
-	   //    settings: {
-	   //      slidesToShow: 1,
-	   //      slidesToScroll: 1,
-	   //      arrow: false,
-	   //      dots: true
-	   //    }
-	   //  },
-	   //  {
-	   //    breakpoint: 480,
-	   //    settings: {
-	   //      slidesToShow: 1,
-	   //      slidesToScroll: 1,
-	   //      arrow: false,
-	   //      dots: true
-	   //    }
-	   //  }
-	  	// ]
+		  adaptiveHeight: true,
+		  responsive: [
+	    {
+	      breakpoint: 1133,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrow: false,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrow: false,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrow: false,
+	        dots: true
+	      }
+	    }
+	  	]
 	});
 
 // mask input phone

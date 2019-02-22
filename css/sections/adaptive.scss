@@ -171,4 +171,10 @@
     .phone-link, .logo-title {
         font-size: 24px;
     }
+    .carousel__item img {
+        display: block;
+        width: auto;
+        min-height: 365px;
+        margin: auto;
+    }
 }

@@ -179,9 +179,12 @@
     //     text-align: left;
     // }
     .arrow {
-        // display: none;  
+        display: none;  
         width: 60px;
         height: 60px;
+    }
+    .dots {
+        display: block;
     }
     .phone-link, .logo-title {
         font-size: 24px;

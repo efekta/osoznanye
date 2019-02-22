@@ -45,7 +45,10 @@
 					<span>ПОМОЩЬ</span>
 				</h1>
 				<p>В ИЗБАВЛЕНИИ ОТ АЛКОГОЛЬНОЙ И НАРКОТИЧЕСКОЙ ЗАВИСИМОСТИ</p>
-				<button type="button" class="btn" data-toggle="modal" data-target=".exampleModal">Заказать звонок</button>
+<!-- 				<button type="button" class="btn" data-toggle="modal" data-target=".exampleModal" data-effect="mfp-zoom-in">Заказать звонок</button> -->
+				<div class="inline-popups">
+					<a class="btn" href="#popup" data-effect="mfp-zoom-in">Заказать звонок</a>
+				</div>
 				<p class="title-desc">Свяжитесь с нами и психолог-консультант  расскажет, как по шагам помочь  Вашему близкому избавиться от зависимости</p>
 			</div>
 		</div>
@@ -216,7 +219,10 @@
 				<h2 class="title">ЗАПИШИТЕСЬ</h2>
 				<p>НА АНОНИМНУЮ БЕСПЛАТНУЮ</p>
 				<span>КОНСУЛЬТАЦИЮ</span>
-				<button type="button" class="btn" data-toggle="modal" data-target=".exampleModal">Заказать звонок</button>
+				<!-- <button type="button" class="btn" data-toggle="modal" data-target=".exampleModal">Заказать звонок</button> -->
+				<div class="inline-popups">
+					<a class="btn" href="#popup" data-effect="mfp-zoom-in">Заказать звонок</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -587,11 +593,14 @@
 <section class="eleventh-section">
 	<div class="container">
 		<div class="title-wrap">
-			<h1 class="title">ПРОФЕССИОНАЛЬНАЯ 
+			<h2 class="title">ПРОФЕССИОНАЛЬНАЯ 
 				<span>ПОМОЩЬ</span>
-			</h1>
+			</h2>
 			<p>В ИЗБАВЛЕНИИ ОТ АЛКОГОЛЬНОЙ И НАРКОТИЧЕСКОЙ ЗАВИСИМОСТИ</p>
-			<button type="button" class="btn" data-toggle="modal" data-target=".exampleModal">Заказать звонок</button>
+			<!-- <button type="button" class="btn" data-toggle="modal" data-target=".exampleModal">Заказать звонок</button> -->
+			<div class="inline-popups">
+				<a class="btn" href="#popup" data-effect="mfp-zoom-in">Заказать звонок</a>
+			</div>
 			<p class="title-desc">Свяжитесь с нами и психолог-консультант  расскажет, как по шагам помочь  Вашему близкому избавиться от зависимости</p>
 		</div>
 	</div>
@@ -620,9 +629,8 @@
 </footer>
 
 <!-- MODAL -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button> -->
-
-<div class="modal fade show exampleModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<!--
+<div class="modal fade exampleModal show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
 	<div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	     	<header class="modal-header">
@@ -652,12 +660,44 @@
 	    </div>
 	</div>
 </div>
+-->
 
+<div class="modal white-popup mfp-with-anim mfp-hide" id="popup">
+	<div class="modal-dialog">
+	    <div class="modal-content">
+	     	<header class="modal-header">
+<!-- 	     		<button class="close" type="button" data-dismiss="modal" alia-label="Close">
+					<span aria-hidden="true">×</span>
+				</button> -->
+	     		<p>Получите анонимную <strong>бесплатную</strong> консультацию</p>
+	     	</header>
+	     	<form action="#" method="POST">
+	     		<div class="modal-body">
+	     			<label>
+						<input type="text" placeholder="8(888)888-88-88" class="phone" name="phone">
+						<span class="error">Это поле обязательно для заполнения.</span>
+					</label>
+					<div class="security">
+						<p>Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+					</div>
+					<div class="input-personal">
+						<input type="checkbox" id="checked_iab" name="personal">
+						<label for="checked_iab">Я даю согласие на обработку моих персональных данных</label>
+					</div>
+	     		</div>
+	     		<footer class="modal-footer">
+	     			<button type="button" class="btn btn-modal">Получить</button>
+	     		</footer>
+	     	</form>
+	    </div>
+	</div>
+</div>
 
 <!--JAVA SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
 </script>
+<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.js"></script>
 <script src="libs/slick/slick.min.js"></script>

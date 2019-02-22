@@ -1,6 +1,7 @@
 // laout
-@import "../libs/bootstrap/scss/bootstrap-reboot";
-@import "../libs/bootstrap/scss/modal";
+// @import "../libs/bootstrap/scss/bootstrap-reboot";
+// @import "../libs/bootstrap/scss/modal";
+@import "../libs/magnific/magnific-popup.scss";
 @import "../libs/slick/slick.scss";
 @import "../libs/slick/slick-theme.scss";
 @import "../libs/fancybox/jquery.fancybox.scss";
@@ -26,4 +27,6 @@
 @import "sections/modal.scss";
 
 @import "sections/footer.scss";
+
+@import "sections/adaptive.scss";
 

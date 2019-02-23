@@ -112,10 +112,10 @@
     }
 }
 @media screen and (max-width: 920px) and (min-width: 320px) {
-    .wrap-head {
-        align-items: flex-start;
-        padding: 20px 0;
-    }
+    // .wrap-head {
+    //     align-items: flex-start;
+    //     padding: 20px 0;
+    // }
     .menu-toggle {
         display: block;
     }
@@ -147,6 +147,9 @@
     .nav__link {
         color: #fff;
     }
+    .contacts {
+        margin-right: 35px;
+    }
 }
 
 
@@ -158,6 +161,7 @@
     .contacts {
         width: 100%;
         text-align: center;
+        margin-right: 35px;
     }
     .one-section {
         min-height: 100%;
@@ -258,6 +262,9 @@
     // }
     .video {
         height: 300px;
+    }
+    .main-nav__list.show {
+        width: 100%;
     }
 }
 

@@ -1,9 +1,11 @@
 .eighth-section {
-	background: url('../img/o5gllh0-min.jpg') no-repeat 50% 50%;
-    background-size: cover;
+    position: relative;
+	// background: url('../img/o5gllh0-min.jpg') no-repeat 50% 50%;
+    // background-size: cover;
     padding: 60px 0;
 }
 .specialist {
+    position: relative;
 	list-style-type: none;
 	display: flex;
     flex-wrap: wrap;
@@ -30,6 +32,7 @@
     	font-weight: 500;
 	}
 }
+
 .specialist-pic {
 	width: 240px;
     height: 240px;

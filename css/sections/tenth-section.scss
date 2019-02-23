@@ -1,7 +1,8 @@
 .tenth-section {
-    background: url('../img/o5gllh0-min.jpg') no-repeat 50% 50%;
-    background-size: cover;
-    padding: 60px 0;
+	position: relative;
+    // background: url('../img/o5gllh0-min.jpg') repeat 50% 50%;
+    // background-size: cover;
+    padding-top: 60px;
     .review {
     	text-align: left;
     	display: flex;
@@ -11,6 +12,17 @@
     // .title-wrap-inner {
     // 	margin-bottom: 70px;
     // }
+}
+.section_bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+    opacity: 0.6;
+    background-size: cover;
+    background: transparent url('../img/o5gllh0-min.jpg') no-repeat center center;
 }
 .step-list {
 	list-style-type: none;
@@ -74,6 +86,7 @@
     }
 }
 .advantage {
+	position: relative;
 	background: #ED5C66;
 	color: #fff;
 	padding: 40px 0;
@@ -95,7 +108,8 @@
 	}
 }
 .advantage-content {
-	width: 70%;
+	width: 80%;
+    margin: auto;
 }
 .advantage-list {
 	padding-left: 40px;
@@ -114,4 +128,16 @@
     font-size: 36px;
     font-weight: 900;
     padding: 60px 0;
+}
+.review-wrap {
+	position: relative;
+	.container {
+		position: relative;
+	}
+	.review {
+		text-align: left;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
 }

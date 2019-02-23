@@ -33,7 +33,7 @@
 }
 .logo-title {
 	text-transform: uppercase;
-	font-size: 32px;
+	font-size: 26px;
     font-family: roboto, sans-serif;
     font-weight: 900;
 }
@@ -47,7 +47,7 @@
     font-weight: 300;
 }
 .phone-link {
-	font-size: 40px;
+	font-size: 26px;
     font-family: roboto, sans-serif;
     font-weight: 900;
     color: #181E2C;
@@ -63,11 +63,43 @@
 	}
 }
 
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav__item {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 5px;
+}
+.nav__link {
+    color: #181E2C;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    &:hover {
+        color: #ED5C66;
+    }
+}
 
-
-
-
-
+// .wrap-head {
+//     .contacts {
+//         .phone-link {
+//             font-size: 20px;
+//         }
+//     }
+// }
+// .wrap-head {
+//     .logo {
+//         width: 20%;
+//         img {
+//             width: 35px;
+//         }
+//         .logo-title {
+//             font-size: 20px;
+//         }
+//     }
+// }
 
 
 

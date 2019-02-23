@@ -166,13 +166,52 @@
     )
     wow.init();
 
+
+
+
 });
 
 
 
 
 
+$(document).ready(function(){
+	// Validate the form with plugin validate.js
+	$('.form').validate({
+	// Rules for form fields
+        rules: {
+            phone: {
+                required: true,
+                digits: true
+            }
+        },
+	// Error messages
+        messages: {
+            phone: {
+                required: "Please fill the field!",
+                digits: "Enter only digits"
+            }
+        },
+	// Submit Handler
+        submitHandler: function(form) {
+            var data_phone = $("input[type=tel").val();
+            console.log(grecaptcha.getResponse()); // Just for test purposes
+       
+            $.ajax({
+                type: "POST",
+                url: "form-handler.php", // Additional php handler for recaptcha validation and message sending
+                data: {
+                    phone: data_phone
+                },
+                success: successHandler(); // Any success handler, for example modal window or redirect or both
+            });
+            return false;
+        }
+	});
+})
 
+   
+ 
 
  
 

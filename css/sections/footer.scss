@@ -1,3 +1,7 @@
+.footer {
+	position: relative;
+	background: #fff;
+}
 .page-footer {
 	display: flex;
 	justify-content: space-between;
@@ -6,23 +10,19 @@
 	padding: 30px 0;
 	.logo {
 		width: auto;
-		// padding: 0 20px;
 	}
 	.contacts {
 		width: 34.3333%;
 		text-align: center;
-		// padding: 0 20px;
 	}
 }
 .page-footer .contacts p {
-    font-weight: 300;
     font-weight: 300;
     font-size: 16px;
     color: #ED5C66;
 }
 .privacy-policy {
 	width: 33.3333%;
-	// padding: 0 20px;
 	text-align: center;
 	p {
 	    line-height: 18px;

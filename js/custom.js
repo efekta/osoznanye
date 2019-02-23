@@ -11,6 +11,27 @@
 		}
 	});
 	/*========================
+	 mob menu
+	 =======================*/
+	$(".menu-toggle").on('click', function() {
+		$(this).toggleClass("on");
+		$('.main-nav__list').toggleClass("show");
+		$('body').toggleClass('overflow');
+	});
+	jQuery(window).width() <= 991 && $(".main-nav__list li").on('click', function() {
+		$('.menu-toggle').removeClass("on");
+		$('.main-nav__list').removeClass("show");
+		$('body').removeClass('overflow');
+  	});
+  	/*================================
+	Плавный скролл до якоря jquery
+	=================================*/
+	$("body").on('click', '[href*="#"]', function(e){
+	  var fixed_offset = 100;
+	  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+	  e.preventDefault();
+	});
+	/*========================
 	 carousel
 	 =======================*/
 	$('.carousel').slick({

@@ -154,6 +154,10 @@
 					form_phone: phone
 				},
 				success: successHandler()
+		}).done(function(){
+			// После завершения отправки
+		}).fail(function(){
+			// При ошибке
 		});
 		return false;
 	});

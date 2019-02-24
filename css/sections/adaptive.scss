@@ -243,7 +243,8 @@
     .carousel__item img {
         display: block;
         width: auto;
-        min-height: 365px;
+        // height: auto;
+        // min-height: 100%;
         margin: auto;
     }
     .title-wrap p {
@@ -262,6 +263,9 @@
     .tenth-section,
     .eleventh-section {
         padding-top: 30px;
+    }
+    .sixth-section {
+        padding-bottom: 30px;
     }
     .sub-title-inner {
         font-size: 22px;

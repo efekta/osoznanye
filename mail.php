@@ -1,7 +1,7 @@
 <?
 
 if(isset($_POST)){
-    $email = 'paulzotoff@yandex.ru';
+    $email = 'efekta9@gmail.com';
     // Validate the input
     function input($data) {
         $data = trim($data);

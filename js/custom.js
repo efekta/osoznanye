@@ -132,11 +132,13 @@
     )
 		wow.init();
 		
-	/*Работа с формой*/
+/*Работа с формой*/
 
 	function successHandler(){
 		// Здесь можно выводить модалку
 		console.log("success");
+		$('.modal-content').toggleClass('modal-content_hide')
+		$('.ok_popup ').toggleClass('ok_popup_show')
 	}
 
 	// Прописываем форму в переменную
@@ -160,15 +162,9 @@
 			// При ошибке
 		});
 		return false;
-	});
+});	
+
 
 });
-
-
-
-
-
- 
-
  
 

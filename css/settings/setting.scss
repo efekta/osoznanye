@@ -125,7 +125,30 @@ li.active a {
 h2 {
 	font-size: 2rem;
 }
-
+::-webkit-input-placeholder {
+	color:#c4c4c4; 
+    font-family: roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+::-moz-placeholder          {
+	color:#c4c4c4; 
+    font-family: roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+	color:#c4c4c4; 
+    font-family: roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+	color:#c4c4c4; 
+    font-family: roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
 .no-pd {
 	padding: 0;
 }

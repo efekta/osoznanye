@@ -723,10 +723,10 @@
 				</button> -->
 	     		<p>Получите анонимную <strong>бесплатную</strong> консультацию</p>
 	     	</header>
-	     	<form class="form" name="form">
+	     	<form action="" method="post" id="ajax_form" class="form" name="form">
 	     		<div class="modal-body">
 	     			<label>
-						<input type="tel" name="phone" placeholder="8(888)888-88-88" class="phone">
+						<input type="text" name="phone" placeholder="8(888)888-88-88" class="phone" required>
 						<!-- <span class="error">Это поле обязательно для заполнения.</span> -->
 					</label>
 					<div class="security">
@@ -744,14 +744,7 @@
 	    </div>
 	</div>
 </div>
-
-<div class="overlay js-overlay-thank-you">
-	<div class="popup js-thank-you">
-		<h2>Спасибо за заявку</h2>
-		<div class="close-popup js-close-thank-you"></div>
-	</div>
-</div>
-
+<div id="result_form"><div> 
 <!--JAVA SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">

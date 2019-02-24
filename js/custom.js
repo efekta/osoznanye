@@ -200,7 +200,7 @@ function sendAjaxForm(result_form, ajax_form, url) {
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
         success: function(response) { //Данные отправлены успешно
         	result = $.parseJSON(response);
-        	$('#result_form').html('Телефон: '+result.phonenumber);
+        	$('#result_form').html('Телефон: '+result.phone);
     	},
     	error: function(response) { // Данные не отправлены
             $('#result_form').html('Ошибка. Данные не отправленны.');

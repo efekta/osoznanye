@@ -24,7 +24,7 @@
 		$('body').removeClass('overflow');
   	});
   	/*================================
-	Плавный скролл до якоря jquery
+	 Плавный скролл до якоря jquery
 	=================================*/
 	$("body").on('click', '[href*="#"]', function(e){
 	  var fixed_offset = 100;
@@ -79,19 +79,20 @@
 	  	]
 	});
 	/*========================
-	mask input phone
+	 mask input phone
 	=========================*/
   $(".phone").mask("+7(999) 999-9999");
 
 	/*========================
-  	fancy
+  	 fancy
   	=========================*/
 	$('.fancy-wrap a').fancybox({ 
 	  animationEffect : 'fade'
 	}).attr('data-fancybox', 'group1');
 
-
-	// Inline popups
+	/*========================
+	 Inline popups
+	=========================*/
 	$('.inline-popups').magnificPopup({
 	  delegate: 'a',
 	  removalDelay: 500, //delay removal by X to allow out-animation
@@ -130,77 +131,48 @@
     }
     )
     wow.init();
-$('#submit').on('click', function() {
-    var phone = $('input[name=phone]').val();
-    // var data = $('input[name=data]').val();
-    // var email = $('input[name=email]').val();
-    $.ajax({
-        url: '/form-handler.php',
-        method: 'post',
-        data: {
-            name: phone,
-            data: data
-            // email: email
-        }
-    }).done(function(response) {
-        var converted = JSON.parse(response);
 
-        var html = 'Your name: ' + converted.name + '<br>';
-        html+= 'Ваш адрес: ' + converted.data;
-        html+=' Ваш номер заказа"' + converted.number + '" again?';
-        html+= '<button>Yes</button>'
-
-        if (converted.secret) {
-            html+='ЭТО СЕКРЕТНЫЕ ДАННЫЕ';
-        }
-
-        $('#result').html(html);
-        alert(converted.status);
-    });
-});
-
-$('input[name=phone]').on('input', function() {
-    $('#result').html($(this).val());
-})
-// Validate the form with plugin validate.js
-// 	$('.form').validate({
-// 	// Rules for form fields
-//         rules: {
-//             phone: {
-//                 required: true,
-//                 digits: true
-//             }
-//         },
-// 	// Error messages
-//         messages: {
-//             phone: {
-//                 required: "Please fill the field!",
-//                 digits: "Enter only digits"
-//             }
-//         },
-// 	// Submit Handler
-//         submitHandler: function(form) {
-//             var data_phone = $("input[type=tel").val();
-//             console.log(grecaptcha.getResponse()); // Just for test purposes
-       
-//             $.ajax({
-//                 type: "POST",
-//                 url: "../form-handler.html", // Additional php handler for recaptcha validation and message sending
-//                 data: {
-//                     phone: data_phone
-//                 },
-//                 success: successHandler(), // Any success handler, for example modal window or redirect or both
-//             });
-//             return false;
-//         }
-// });
 
 
 });
 
 
 
-   
+   // Отправка заявки 
+$(document).ready(function() {
+	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+		if (document.form.name.value == '' || document.form.phone.value == '' ) {
+			valid = false;
+			return valid;
+		}
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$('.js-overlay-thank-you').fadeIn();
+			$(this).find('input').val('');
+			$('#form').trigger('reset');
+		});
+		return false;
+	});
+});
+
+// Закрыть попап «спасибо»
+$('.js-close-thank-you').click(function() { // по клику на крестик
+	$('.js-overlay-thank-you').fadeOut();
+});
+
+$(document).mouseup(function (e) { // по клику вне попапа
+    var popup = $('.popup');
+    if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+        $('.js-overlay-thank-you').fadeOut();
+    }
+});
+
+
+
+
  
 
  

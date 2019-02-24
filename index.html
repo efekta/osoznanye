@@ -722,10 +722,10 @@
 				</button> -->
 	     		<p>Получите анонимную <strong>бесплатную</strong> консультацию</p>
 	     	</header>
-	     	<form action="form-handler.html" method="POST" class="form">
+	     	<form action="" method="POST" class="form" id="form" name="form">
 	     		<div class="modal-body">
 	     			<label>
-						<input type="tel" name="phone" placeholder="8(888)888-88-88" class="phone">
+						<input type="text" name="phone" placeholder="8(888)888-88-88" class="phone">
 						<!-- <span class="error">Это поле обязательно для заполнения.</span> -->
 					</label>
 					<div class="security">
@@ -744,14 +744,19 @@
 	</div>
 </div>
 
+<div class="overlay js-overlay-thank-you">
+	<div class="popup js-thank-you">
+		<h2>Спасибо за заявку</h2>
+		<div class="close-popup js-close-thank-you"></div>
+	</div>
+</div>
+
 <!--JAVA SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
 </script>
 <script src="libs/animate/wow.js"></script>
-<!-- <script>
-    new WOW().init();
-</script> -->
+
 <script src="libs/magnific/jquery.magnific-popup.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.js"></script>

@@ -746,7 +746,7 @@
 </div>
 <div id="result_form"><div> 
 <!--JAVA SCRIPT-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
 </script>
 <script src="libs/animate/wow.js"></script>

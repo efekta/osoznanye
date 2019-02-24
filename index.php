@@ -722,7 +722,7 @@
 				</button> -->
 	     		<p>Получите анонимную <strong>бесплатную</strong> консультацию</p>
 	     	</header>
-	     	<form action="form-handler.html" method="POST" class="form">
+	     	<form action="/form-handler.php" method="post" enctype="multipart/form-data" class="form">
 	     		<div class="modal-body">
 	     			<label>
 						<input type="tel" name="phone" placeholder="8(888)888-88-88" class="phone">
@@ -737,8 +737,9 @@
 					</div>
 	     		</div>
 	     		<footer class="modal-footer">
-	     			<button type="submit" class="btn btn-modal">Получить</button>
+	     			<button id="submit" type="submit" class="btn btn-modal">Получить</button>
 	     		</footer>
+	     		<div id="result"></div>
 	     	</form>
 	    </div>
 	</div>

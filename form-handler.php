@@ -1,39 +1,59 @@
 <?php
-    // $response = $_POST['captcha']; // Checking the captcha response
-    // if ($response) {
-    // $url_to_google_api = "https://www.google.com/recaptcha/api/siteverify";
-    // $secret_key = 'key'; // Secret key from recaptcha
-    // $query = $url_to_google_api . '?secret=' . $secret_key . '&response=' . $response;
-    // $data = json_decode(file_get_contents($query));
-    // if ($data->success) {
-	   //      // Working with data if validation was success
-	   //      /*mailto*/
-			$email = 'mail@google.com';
-			$from = 'from@yourwebsite.com';
-		 	/*Function to validate the input*/
-		 	function validate_input($data) {
-			  $data = trim($data);
-			  $data = stripslashes($data);
-			  $data = htmlspecialchars($data);
-			  return $data;
-			}
-			$name = validate_input($_POST['name']);
-			$phone = validate_input($_POST['phone']);
-			$text = validate_input($_POST['text']);
-	    		//Email template
-			$msg = "<h3>Theme</h3>";
-			$msg .= "<hr/>";
-			$msg .= "<p><strong>Name: </strong>".$name."<p>";
-			$msg .= "<p><strong>Phone: </strong>".$phone."</p>";
-			$msg .= "<p><strong>Text: </strong>".$text."</p>";
-			$msg .= "<hr/>";
-			$msg .= "<p><em>Sign</em></p>";
-			$headers  = "Content-type: text/html; charset= UTF-8 \r\n";
-			$headers .= "From: site@yourwebsite.com \r\n";
-			mail($email, 'Letter from website', $msg, $headers);
-	    } else {
-	        exit('Sorry, but seems like you are a bot \(0_0)/');
-	    }
-} else {
-    exit('You did not pass Recaptcha validation');
+require "PHPMailer-master/PHPMailerAutoload.php";
+
+//print_r($_REQUEST);
+
+$name = $_POST['name'];
+$data = $_POST['data'];
+
+$mydata = $_POST;
+
+if ($name == 'arku' && $data == '123') {
+    $mydata['secret'] = 'supersecretdata';
 }
+
+$number = file_get_contents('1.txt');
+file_put_contents('1.txt', ++$number);
+$mydata['number'] = $number;
+
+
+
+//$age = rand(15, 30);
+//
+//echo 'name: '.$name.' '.$age."<br>";
+//echo 'data: '.$data;
+
+//mail('asd@asd.ru', 'Hello from loftschool', "Привет из скрипта! Заказ №".$number);
+
+
+
+$mail = new PHPMailer;
+
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//login - fsdfsdfsdf.05
+//password yjdbxrb#123
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'fsdfsdfsdf.05@bk.ru';                 // SMTP username
+$mail->Password = 'yjdbxrb#123';                           // SMTP password
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;                                    // TCP port to connect to
+$mail->CharSet = 'UTF-8';
+$mail->setFrom('fsdfsdfsdf.05@bk.ru', 'mr. fsd');
+$mail->addAddress($_POST['email'], 'Дорогому клиенту');     // Add a recipient
+
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Ваш заказ сформирован';
+$mail->Body    = 'Заказ №33 оплачен и готов к выдаче';
+$mail->AltBody = 'Заказ №33 оплачен и готов к выдаче';
+
+if(!$mail->send()) {
+    $mydata['status'] = 'Message could not be sent.';
+    $mydata['status'] .= 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    $mydata['status'] = 'Message has been sent';
+}
+
+echo json_encode($mydata);

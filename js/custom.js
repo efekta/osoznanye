@@ -78,46 +78,9 @@
 	    }
 	  	]
 	});
-//     var dots = $('.carousel__item');
-// 	//вешаем обработчик на наши точки
-// 	dots.click(function(){
-// 		var $this = $(this);
-// 		dots.removeClass('before after');
-// 		//отображаем 2 предыдущие точки
-// 		$this
-// 			.prev().addClass('before')
-// 			.prev().addClass('before');
-// 		//отображаем 2 следующие точки
-// 		$this
-// 			.next().addClass('after')
-// 			.next().addClass('after');
-
-	
-// 	  //если мы в самом начале - добавляем пару последующих точек
-// 		if(!$this.prev().length) {
-// 	  	$this.next().next().next()
-// 		  	.addClass('after').next()
-// 			  .addClass('after');
-//   	}
-// 		//на 2й позиции - добавляем одну точку
-// 	  if(!$this.prev().prev().length) {
-//   		$this.next().next().next()
-// 	  	  .addClass('after');
-//   	}
-// 		//в самом конце - добавляем пару доп. предыдущих точек
-// 		if(!$this.next().length) {
-// 			$this.prev().prev().prev()
-// 				.addClass('before').prev()
-// 				.addClass('before');
-// 		}
-// 		//предпоследний элемента - добавляем одну пред. точку
-// 		if(!$this.next().next().length) {
-// 			$this.prev().prev().prev()
-// 				.addClass('before');
-// 		}	
-// });
-// mask input phone
-
+	/*========================
+	mask input phone
+	=========================*/
   $(".phone").mask("+7(999) 999-9999");
 
 	/*========================
@@ -154,7 +117,9 @@
 	  },
 	  midClick: true
 	});
-
+	/*========================
+	wow 
+	=========================*/
 	wow = new WOW(
      {
       boxClass:     'wow',      // default
@@ -165,50 +130,75 @@
     }
     )
     wow.init();
+$('#submit').on('click', function() {
+    var phone = $('input[name=phone]').val();
+    // var data = $('input[name=data]').val();
+    // var email = $('input[name=email]').val();
+    $.ajax({
+        url: '/form-handler.php',
+        method: 'post',
+        data: {
+            name: phone,
+            data: data
+            // email: email
+        }
+    }).done(function(response) {
+        var converted = JSON.parse(response);
 
+        var html = 'Your name: ' + converted.name + '<br>';
+        html+= 'Ваш адрес: ' + converted.data;
+        html+=' Ваш номер заказа"' + converted.number + '" again?';
+        html+= '<button>Yes</button>'
 
+        if (converted.secret) {
+            html+='ЭТО СЕКРЕТНЫЕ ДАННЫЕ';
+        }
+
+        $('#result').html(html);
+        alert(converted.status);
+    });
+});
+
+$('input[name=phone]').on('input', function() {
+    $('#result').html($(this).val());
+})
+// Validate the form with plugin validate.js
+// 	$('.form').validate({
+// 	// Rules for form fields
+//         rules: {
+//             phone: {
+//                 required: true,
+//                 digits: true
+//             }
+//         },
+// 	// Error messages
+//         messages: {
+//             phone: {
+//                 required: "Please fill the field!",
+//                 digits: "Enter only digits"
+//             }
+//         },
+// 	// Submit Handler
+//         submitHandler: function(form) {
+//             var data_phone = $("input[type=tel").val();
+//             console.log(grecaptcha.getResponse()); // Just for test purposes
+       
+//             $.ajax({
+//                 type: "POST",
+//                 url: "../form-handler.html", // Additional php handler for recaptcha validation and message sending
+//                 data: {
+//                     phone: data_phone
+//                 },
+//                 success: successHandler(), // Any success handler, for example modal window or redirect or both
+//             });
+//             return false;
+//         }
+// });
 
 
 });
 
 
-
-
-
-$(document).ready(function(){
-	// Validate the form with plugin validate.js
-	$('.form').validate({
-	// Rules for form fields
-        rules: {
-            phone: {
-                required: true,
-                digits: true
-            }
-        },
-	// Error messages
-        messages: {
-            phone: {
-                required: "Please fill the field!",
-                digits: "Enter only digits"
-            }
-        },
-	// Submit Handler
-        submitHandler: function(form) {
-            var data_phone = $("input[type=tel").val();
-            console.log(grecaptcha.getResponse()); // Just for test purposes
-       
-            $.ajax({
-                type: "POST",
-                url: "form-handler.php", // Additional php handler for recaptcha validation and message sending
-                data: {
-                    phone: data_phone
-                },
-                success: successHandler(); // Any success handler, for example modal window or redirect or both
-            });
-            return false;
-        }
-	});
-})
 
    
  

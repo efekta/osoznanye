@@ -150,28 +150,37 @@
     .contacts {
         margin-right: 35px;
     }
+    .logo {
+        margin-top: 23px;
+    }
+    .menu-toggle {
+        top: 40px;
+    }
 }
 
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-    background: url('../img/fon-min.jpg') no-repeat 100% 100%;
+
     .logo {
         // width: 100%;
         // text-align: center;
+        // margin-top: 23px;
         img {
             width: 40px;
         }
     }
     .menu-toggle {
-        top: 17px;
+        top: 26px;
     }
     .contacts {
         // width: 100%;
         // text-align: center;
         margin-right: 45px;
+        margin-left: 45px;
     }
     .one-section {
         min-height: 100%;
+        background: url('../img/fon-min.jpg') no-repeat top left;
     }
     .fourth-content__item {
         width: 100%;
@@ -189,6 +198,7 @@
     }
     .specialist__item {
         width: 100%;
+        margin-bottom: 0;
     }
     // .fancy-item {
     //     width: 100%;
@@ -206,17 +216,14 @@
     .eleventh-section {
         min-height: 600px;
     }
-    // .tenth-section {
-    //     .step-a {
-    //         position: absolute;
-    //         top: 20px;
-    //         left: 50%;
-    //         right: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //         transform: translatex(-50%);
-    //     }
-    // }
+    .section_bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
     .arrow {
         display: none;  
         width: 60px;
@@ -249,7 +256,7 @@
     .ninth-section, 
     .tenth-section,
     .eleventh-section {
-        padding: 30px 0;
+        padding-top: 30px;
     }
     .sub-title-inner {
         font-size: 22px;
@@ -269,9 +276,13 @@
     // }
     .video {
         height: 300px;
+        padding-top: 30px;
     }
     .main-nav__list.show {
         width: 100%;
+    }
+    .fourth-section {
+        padding-bottom: 30px;
     }
 }
 
@@ -283,7 +294,7 @@
         width: 100%;
     }
     .step-a span.gray, .step-a span.pink {
-        font-size: 70px;
+        font-size: 55px;
     }
     .step-wrap {
         height: auto;

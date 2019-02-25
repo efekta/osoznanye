@@ -309,6 +309,26 @@
     .ninth-section .programs .title-wrap-inner .title-inner {
         margin-bottom: 0;
     }
+    .step-a {
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+    }
+    .fourth-content__item {
+        padding: 0;
+    }
+    .content-item {
+        padding: 10px 0;
+    }
+    .specialist__item {
+        padding: 10px 0;
+    }
+    .specialist-name, .specialist p {
+        margin-bottom: 10px;
+    }
+    .programs p {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 560px) and (min-width: 320px) {
@@ -353,21 +373,5 @@
     }
     .fifth-section .title-wrap span {
         font-size: 30px;
-    }
-    .step-a {
-        top: 50%;
-        left: -5px;
-    }
-    .fourth-content__item {
-        padding: 0;
-    }
-    .content-item {
-        padding: 10px 0;
-    }
-    .specialist__item {
-        padding: 10px 0;
-    }
-    .specialist-name, .specialist p {
-        margin-bottom: 10px;
     }
 }

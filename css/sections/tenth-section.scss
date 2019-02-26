@@ -16,6 +16,7 @@
 
 .step-list {
 	list-style-type: none;
+	padding-bottom: 40px;
 }
 .step-item  {
 	// position: relative;
@@ -122,9 +123,9 @@
 }
 .review-wrap {
 	position: relative;
-	.section_bg img {
-    	height: auto;
-	}
+	// .section_bg img {
+ //    	height: auto;
+	// }
 	.container {
 		position: relative;
 	}

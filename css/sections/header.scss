@@ -31,7 +31,6 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	// padding: 10px 0;
 }
 .logo-title-wrap {
 	display: inline-block;
@@ -58,8 +57,6 @@
     font-weight: 900;
     color: #181E2C;
     text-decoration: none;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
     transition: all .3s ease;
     span {
     	color: #ED5C66;
@@ -79,7 +76,6 @@
 .nav__item {
     display: inline-block;
     font-size: 0;
-    // margin: 0 10px;
 }
 .nav__link {
     color: #181E2C;
@@ -94,11 +90,10 @@
     width: 26px;
     height: 23px;
     position: absolute;
-    // position: relative;
     top: 27px;
     right: 23px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 99;
 }
 .menu-toggle .one, .menu-toggle .three, .menu-toggle .two {
     width: 100%;
@@ -151,5 +146,6 @@
     right: 0;
     opacity: 1;
     background: rgba(0,0,0,.8);
+    z-index: 99;
 }
 

@@ -22,11 +22,6 @@
 <section class="one-section">
 	<header class="page-head">
 		<div class="container">
-<!-- 			<div class="menu-toggle">
-				<span class="one"></span>
-				<span class="two"></span>
-				<span class="three"></span>
-			</div> -->
 			<nav class="nav">
 				<ul class="nav__list  main-nav__list">
 					<li class="nav__item">
@@ -102,10 +97,7 @@
 </div>
 
 <section id="two-section" class="two-section">
-	<div class="section_bg">
-		<img src="img/o5gllh0-min.jpg" alt="фон">
-	</div>
-
+	<div class="section_bg"></div>
 	<div class="container">
 		<div class="video">
 			<iframe src="//www.youtube.com/embed/HR-Fyc8zza0?autoplay=0&amp;loop=0&amp;showinfo=0&amp;theme=dark&amp;color=red&amp;controls=1&amp;modestbranding=0&amp;start=0&amp;fs=1&amp;iv_load_policy=1&amp;wmode=transparent&amp;rel=1" frameborder="0" allowfullscreen=""></iframe>
@@ -261,9 +253,7 @@
 </section>
 
 <section id="sixth-section" class="sixth-section">
-	<div class="section_bg">
-		<img src="img/o5gllh0-min.jpg" alt="фон">
-	</div>
+	<div class="section_bg"></div>
 	<div class="container">
 		<div class="title-wrap-inner">
 			<h2 class="title title-inner">
@@ -407,9 +397,7 @@
 </section>
 
 <section id="eighth-section" class="eighth-section">
-	<div class="section_bg">
-		<img src="img/o5gllh0-min.jpg" alt="фон">
-	</div>
+	<div class="section_bg"></div>
 	<div class="container">
 		<div class="title-wrap-inner">
 			<h2 class="title title-inner">
@@ -535,9 +523,7 @@
 </section>
 
 <section id="tenth-section" class="tenth-section">
-	<div class="section_bg">
-		<img src="img/o5gllh0-min.jpg" alt="фон">
-	</div>
+	<div class="section_bg"></div>
 	<div class="container">
 		<div class="title-wrap-inner">
 			<h2 class="title title-inner">
@@ -619,10 +605,8 @@
 	</div>
 </section>
 
-<section class="review-wrap">
-	<div class="section_bg">
-		<img src="img/o5gllh0-min.jpg" alt="фон">
-	</div>
+<div class="review-wrap">
+	<div class="section_bg"></div>
 	<div class="container">
 		<h2 class="title sub-title-inner wow zoomInUp" data-wow-duration="1s" data-wow-delay="1s">
 			Сделайте 1 шаг- позвоните нам и остальные 4 за Вас сделаем мы!
@@ -639,7 +623,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
 <section class="eleventh-section">
 	<div class="container">
@@ -742,13 +726,13 @@
 	     		</footer>
 	     	</form>
 	    </div>
-	    <div class="ok_popup js-thank-you">
+		<div class="ok_popup js-thank-you">
 			<h2>Спасибо за заявку</h2>
 			<!-- <div class="ok_close-popup js-close-thank-you"></div> -->
 		</div>
 	</div>
 </div>
-<div id="result_form"><div> 
+<div id="result_form"></div> 
 <!--JAVA SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">

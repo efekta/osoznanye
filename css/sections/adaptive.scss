@@ -325,8 +325,14 @@
     .slick-dots {
         bottom: -5px;
     }
+    .step-wrap p {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 560px) and (min-width: 320px) {
+    .wrap-head {
+        justify-content: center;
+    }
     .fancy-item {
         width: 100%;
     }
@@ -368,5 +374,22 @@
     }
     .fifth-section .title-wrap span {
         font-size: 30px;
+    }
+}
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .step-a {
+        top: 55%;
+        left: -5px;
+    }
+    .step-item .step-title {
+        font-size: 22px;
+    }
+    .step-item p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 370px) and (min-width: 320px) {
+    .slick-dots {
+        bottom: -25px;
     }
 }

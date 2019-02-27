@@ -5,9 +5,11 @@
 	$(window).scroll(function() {
 		if($(this).scrollTop() >= 250) {
 		$('.page-head').addClass('page-head_fixed');
+		$('.nav').addClass("nav_hide");
 	}
 	else{
 		$('.page-head').removeClass('page-head_fixed');
+		$('.nav').removeClass("nav_hide");
 		}
 	});
 	/*========================

@@ -149,7 +149,7 @@
         color: #fff;
     }
     .contacts {
-        margin-right: 35px;
+        margin: auto 35px;
     }
     .logo {
         margin-top: 23px;
@@ -168,9 +168,6 @@
     	min-height: 500px;
     }
     .logo {
-        // width: 100%;
-        // text-align: center;
-        // margin-top: 23px;
         img {
             width: 40px;
         }
@@ -179,10 +176,7 @@
         top: 26px;
     }
     .contacts {
-        // width: 100%;
-        // text-align: center;
-        margin-right: 45px;
-        margin-left: 45px;
+        margin: auto 45px;
     }
     .one-section {
         // min-height: 100%;

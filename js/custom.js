@@ -16,13 +16,13 @@
 	$(".menu-toggle").on('click', function() {
 		$(this).toggleClass("on");
 		$('.main-nav__list').toggleClass("show");
-		$('.nav').toggleClass("show");
+		// $('.nav').toggleClass("nav_hide");
 		$('body').toggleClass('overflow');
 	});
 	jQuery(window).width() <= 991 && $(".main-nav__list li").on('click', function() {
 		$('.menu-toggle').removeClass("on");
 		$('.main-nav__list').removeClass("show");
-		$('.nav').removeClass("show");
+		// $('.nav').removeClass("nav_hide");
 		$('body').removeClass('overflow');
   	});
   	/*================================
